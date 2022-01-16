@@ -1,9 +1,10 @@
-import random
 def leap():
-    x = random.randint(1600, 2400)
-    print(x)
-    if x % 4 == 0 and x % 400 != 100 and x % 400 != 200 and x % 400 != 300:
-        print("leap year")
+    x = input("enter year: ")
+    y = int(x)
+    if y % 4 == 0 and y % 400 != 100 and y % 400 != 200 and y % 400 != 300:
+        print(y, "is a leap year")
+        leap()
     else:
-       print("not a leap year")
+        print(y, "is not a leap year")
+        leap()
 leap()
