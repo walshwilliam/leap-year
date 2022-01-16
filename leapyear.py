@@ -3,8 +3,7 @@ def leap():
     y = int(x)
     if y % 4 == 0 and y % 400 != 100 and y % 400 != 200 and y % 400 != 300:
         print(y, "is a leap year")
-        leap()
     else:
         print(y, "is not a leap year")
-        leap()
+    leap()
 leap()
